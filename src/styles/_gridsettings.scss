@@ -1,0 +1,59 @@
+@mixin bgcolours {
+  width: 30px;
+  height: 30px;
+  box-shadow: 1px 2px 3px rgba(160, 160, 160, 0.25);
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.bgColours-container {
+  display: flex;
+}
+
+.bgWhite {
+  @include bgcolours();
+  background: #fff;
+  border: 1px solid rgba(192, 192, 192, 0.295);
+}
+
+.bgPurple {
+  @include bgcolours();
+  background: #d5d6ea;
+}
+
+.bgBlue {
+  @include bgcolours();
+  background: #b6d8f2;
+}
+
+.bgGreen {
+  @include bgcolours();
+  background: #d7ecd9;
+}
+
+.GS-title {
+  background: $pink;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-weight: 700;
+  color: white;
+}
+
+.flex-just {
+  justify-content: space-around;
+  width: 100%;
+}
+
+.font-toggle {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.gridSize-btns {
+  display: flex;
+  button {
+    margin-right: 10px;
+  }
+}
